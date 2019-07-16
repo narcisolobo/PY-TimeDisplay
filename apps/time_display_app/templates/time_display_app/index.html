@@ -1,0 +1,31 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Time Display</title>
+  <meta name="description" content="Time Display Assignment for Coding Dojo">
+  <meta name="author" content="Narciso Lobo">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'time_display_app/css/style.css' %}">
+
+</head>
+
+<body class="text-center">
+
+  <div class="cover-container d-flex p-3 mx-auto flex-column">
+
+    <main role="main" class="inner cover">
+      <img src="{% static 'time_display_app/images/clock.png' %}" alt="Clock">
+      <h1 class="cover-heading">{{time}}</h1>
+      <p class="lead">{{date}}</p>
+      <p class="lead">
+        <a href="/" class="btn btn-lg btn-secondary">Reload</a>
+      </p>
+    </main>
+  </div>
+
+</body>
+</html>
